@@ -52,7 +52,7 @@ all: payload
 vmacho:
 	$(CC_FOR_BUILD) $(CFLAGS_FOR_BUILD) $(LDFLAGS_FOR_BUILD) -o vmacho vmacho.c
 
-payload: $(OBJ)_s8000.bin $(OBJ)_t8010.bin $(OBJ)_t8015.bin
+payload: $(OBJ)_s8000.bin $(OBJ)_t8010.bin $(OBJ)_t8012.bin $(OBJ)_t8015.bin
 
 %.o: %.c
 	$(CC) -c $(CFLAGS) $<
